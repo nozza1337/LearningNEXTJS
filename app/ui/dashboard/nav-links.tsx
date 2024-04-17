@@ -21,11 +21,11 @@ const links = [
 ];
 
 export default function NavLinks() {
+  const pathname = usePathname(); // Moved this outside the return statement
   return (
     <>
       {links.map((link) => {
         const LinkIcon = link.icon;
-        const pathname = usePathname(); // Moved this outside the return statement
         return (
           <Link
             key={link.name}
