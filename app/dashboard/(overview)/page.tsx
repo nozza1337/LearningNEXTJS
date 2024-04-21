@@ -27,6 +27,7 @@ export default async function Page() {
         <LatestInvoices  />
       </Suspense>
       
+      
       </div>
     </main>
   );
